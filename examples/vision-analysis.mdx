@@ -22,7 +22,7 @@ Vision analysis requires GPT-4o or compatible vision-enabled models. Images can 
     import os
 
     API_KEY = os.getenv("SWARMS_API_KEY")
-    BASE_URL = "https://swarms-api-285321057562.us-east1.run.app"
+    BASE_URL = "https://api.swarms.world"
 
     # Encode image to base64
     def encode_image(image_path):
@@ -60,7 +60,7 @@ Vision analysis requires GPT-4o or compatible vision-enabled models. Images can 
   <Tab title="JavaScript">
     ```javascript
     const API_KEY = process.env.SWARMS_API_KEY;
-    const BASE_URL = "https://swarms-api-285321057562.us-east1.run.app";
+    const BASE_URL = "https://api.swarms.world";
 
     // Function to convert image to base64
     async function imageToBase64(file) {
@@ -109,7 +109,7 @@ Vision analysis requires GPT-4o or compatible vision-enabled models. Images can 
   <Tab title="cURL">
     ```bash
     # Using base64 encoded image
-    curl -X POST "https://swarms-api-285321057562.us-east1.run.app/v1/agent/completions" \
+    curl -X POST "https://api.swarms.world/v1/agent/completions" \
       -H "x-api-key: your-api-key" \
       -H "Content-Type: application/json" \
       -d '{
@@ -124,7 +124,7 @@ Vision analysis requires GPT-4o or compatible vision-enabled models. Images can 
       }'
 
     # Using image URL
-    curl -X POST "https://swarms-api-285321057562.us-east1.run.app/v1/agent/completions" \
+    curl -X POST "https://api.swarms.world/v1/agent/completions" \
       -H "x-api-key: your-api-key" \
       -H "Content-Type: application/json" \
       -d '{
